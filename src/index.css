@@ -1,1 +1,4 @@
-@import "tailwindcss"
+@import "tailwindcss";
+.full-rounded{
+  border-radius: 100%;
+}

@@ -1,11 +1,10 @@
 import "./App.css";
+import Card from "./Components/Card";
 
 function App() {
   return (
     <>
-      <div>
-        <h1>I am A vite App</h1>
-      </div>
+      <Card />
     </>
   );
 }
