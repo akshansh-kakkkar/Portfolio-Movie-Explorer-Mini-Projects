@@ -7,7 +7,7 @@
 -> tailwindCss
 
 
-# Icons 
-From Huge Icons
+### Icons 
+###From Huge Icons
 
-# Deploy Link - https://portfolio-movie-explorer-mini-proje.vercel.app/
+### Deploy Link - https://portfolio-movie-explorer-mini-proje.vercel.app/
