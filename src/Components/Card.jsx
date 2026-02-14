@@ -24,11 +24,11 @@ const Card = () => {
   };
   return (
     <div
-      className={` p-5 min-h-screen transition-all duration-300 ${theme ? "bg-gray-900" : "bg-gray-200"}`}
+      className={` p-3 min-h-screen transition-all duration-300 ${theme ? "bg-gray-900" : "bg-gray-200"}`}
     >
-      <div className="flex justify-center ml-82 my-3 items-center gap-3">
-        <div
-          className={`flex items-center py-2 px-4  gap-3 rounded-2xl ${theme ? "bg-white text-black" : "bg-blue-200 text-black"}`}
+      <div className="flex justify-center sm:ml-82 my-3 items-center gap-3">
+        <div 
+          className={` flex items-center py-2 px-4  gap-3 rounded-2xl ${theme ? "bg-white text-black" : "bg-blue-200 text-black"}`}
           onClick={Toggletheme}
         >
           <span>
@@ -45,7 +45,7 @@ const Card = () => {
         {User &&
             <div
               key={User.Id}
-              className={`w-[500px] h-[500px] p-6  rounded-xl ${theme ? "bg-gray-500" : "bg-white"}`}
+              className={`sm:w-[500px] sm:h-[500px] w-400px h-400px p-6  rounded-xl ${theme ? "bg-gray-500" : "bg-white"}`}
             >
               <div className="flex items-center gap-2">
                 <img
@@ -79,7 +79,7 @@ const Card = () => {
               >
                 Skills
               </div>
-              <div className="flex flex-wrap gap-2  items-center justify-between pt-2 text-md  mx-2">
+              <div className="flex flex-wrap gap-2  items-center  pt-2 text-md  mx-2">
                 {User.Skill.map((Skill, Index) => (
                   <span
                     className={`py-1  px-2 flex  items-center rounded-2xl ${theme ? "bg-white" : "bg-blue-100"}`}
@@ -94,11 +94,11 @@ const Card = () => {
                   <span>
                     <img
                       src={theme ? "assets/cloud.svg" : "assets/sun.svg"}
-                      style={{ width: 40 }}
+                      style={{ width: 24 }}
                       alt="dark mode"
                     />
                   </span>
-                  <span className={` ${theme ? "text-white" : "text-black"}`}>
+                  <span className={`hidden sm:block ${theme ? "text-white" : "text-black"}`}>
                     {theme ? "dark mode" : "light mode"}
                   </span>
                 </div>
@@ -159,7 +159,7 @@ const Card = () => {
                           ? "assets/white-mail.svg"
                           : "assets/black-mail.svg"
                       }
-                      style={{ width: 30 }}
+                      style={{ width: 24 }}
                       alt="dark mode"
                     />
                   </span>
